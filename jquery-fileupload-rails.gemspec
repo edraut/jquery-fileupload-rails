@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "jquery/fileupload/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "jquery-fileupload-rails"
+  s.name        = "sn-jquery-fileupload-rails"
   s.version     = JQuery::FileUpload::Rails::VERSION
   s.authors     = ["Tors Dalid"]
   s.email       = ["cletedalid@gmail.com"]
@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency             'railties',   '>= 3.1'
-  s.add_dependency             'actionpack', '>= 3.1'
-  s.add_development_dependency 'rails', '>= 3.1'
-  s.add_runtime_dependency     'sass', '>= 3.2'
+  s.add_dependency             'railties'
+  s.add_dependency             'actionpack'
+  s.add_development_dependency 'rails'
+  s.add_runtime_dependency     'sass'
 end
